@@ -35,7 +35,7 @@ export default function Hero() {
                     <Button className="bg-amber-500 text-white text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 rounded-full hover:bg-amber-600 w-full sm:w-auto">
                         <Link href="/register">Register Now</Link>
                     </Button>
-                    <Button variant="outline" className="text-blue-950 bg-(--dck-bg) text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 rounded-full hover:bg-gray-200 w-full sm:w-auto">
+                    <Button variant="outline" className="text-blue-950 bg-(--dck-bg) cursor-pointer text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 rounded-full hover:bg-gray-200 w-full sm:w-auto">
                         Watch Intro Video
                     </Button>
                 </div>
