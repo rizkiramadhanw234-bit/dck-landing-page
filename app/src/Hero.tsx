@@ -20,27 +20,6 @@ import { Clients } from "../src/data/clients"
 export default function Hero() {
     return (
         <>
-            {/* DESCRIPTION / PROMISE */}
-            <section className="bg-(--dck-bg) text-center py-12 sm:py-16 md:py-20 px-4 sm:px-6">
-                <p className="text-base sm:text-lg md:text-xl text-blue-950">
-                    For entrepreneurs looking to grow<br className="hidden sm:block" />No marketing skills? No team?<br className="hidden sm:block" />Starting from zero?
-                </p>
-
-                <p className="mt-4 sm:mt-6 text-xl sm:text-2xl font-bold text-blue-950">
-                    AI + Marketing Management + Automation System
-                </p>
-
-                <p className="text-blue-950 mt-3 sm:mt-4 text-base sm:text-lg">Break the traditional business model.</p>
-
-                <p className="mt-6 sm:mt-8 md:mt-10 text-lg sm:text-xl font-bold text-gray-500">
-                    365 days online & offline guidance<br className="hidden sm:block" />Marketing strategy + systems + resources
-                </p>
-
-                <h2 className="mt-6 sm:mt-8 text-2xl sm:text-3xl font-extrabold text-blue-950">
-                    Practical, hands-on support to fully automate your business.
-                </h2>
-            </section>
-
             {/* HERO SECTION */}
             <section className="py-12 sm:py-16 md:py-24 text-center bg-white px-4 sm:px-6">
                 <h1 className="text-3xl leading-tight sm:text-4xl sm:leading-20 md:text-5xl lg:text-6xl font-extrabold text-blue-950 drop-shadow-xl"
@@ -60,6 +39,27 @@ export default function Hero() {
                         Watch Intro Video
                     </Button>
                 </div>
+            </section>
+
+            {/* DESCRIPTION / PROMISE */}
+            <section className="bg-(--dck-bg) text-center py-12 sm:py-16 md:py-20 px-4 sm:px-6">
+                <p className="text-base sm:text-lg md:text-xl text-blue-950">
+                    For entrepreneurs looking to grow<br className="hidden sm:block" />No marketing skills? No team?<br className="hidden sm:block" />Starting from zero?
+                </p>
+
+                <p className="mt-4 sm:mt-6 text-xl sm:text-2xl font-bold text-blue-950">
+                    AI + Marketing Management + Automation System
+                </p>
+
+                <p className="text-blue-950 mt-3 sm:mt-4 text-base sm:text-lg">Break the traditional business model.</p>
+
+                <p className="mt-6 sm:mt-8 md:mt-10 text-lg sm:text-xl font-bold text-gray-500">
+                    365 days online & offline guidance<br className="hidden sm:block" />Marketing strategy + systems + resources
+                </p>
+
+                <h2 className="mt-6 sm:mt-8 text-2xl sm:text-3xl font-extrabold text-blue-950">
+                    Practical, hands-on support to fully automate your business.
+                </h2>
             </section>
 
             {/* VIDEO */}
