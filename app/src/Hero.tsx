@@ -1,63 +1,70 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
-import { motion } from "framer-motion"
 import Link from "next/link";
 import Sara from "../src/assets/sara.png"
 import Image from "next/image";
 import { Testimonial } from "../src/data/testimonial"
-import { Card, CardContent } from "@/components/ui/card";
-import {
-    Carousel,
-    CarouselContent,
-    CarouselItem,
-    CarouselNext,
-    CarouselPrevious,
-} from "@/components/ui/carousel";
-import { Services } from "../src/data/services"
+// import { Card, CardContent } from "@/components/ui/card";
+// import {
+//     Carousel,
+//     CarouselContent,
+//     CarouselItem,
+//     CarouselNext,
+//     CarouselPrevious,
+// } from "@/components/ui/carousel";
+// import { Services } from "../src/data/services"
 import { Clients } from "../src/data/clients"
 
 
 export default function Hero() {
     return (
         <>
+            {/* DESCRIPTION / PROMISE */}
+            <section className="bg-(--dck-bg) text-center py-12 sm:py-16 md:py-20 px-4 sm:px-6">
+                <p className="text-base sm:text-lg md:text-xl text-blue-950">
+                    For entrepreneurs looking to grow<br className="hidden sm:block" />No marketing skills? No team?<br className="hidden sm:block" />Starting from zero?
+                </p>
+
+                <p className="mt-4 sm:mt-6 text-xl sm:text-2xl font-bold text-blue-950">
+                    AI + Marketing Management + Automation System
+                </p>
+
+                <p className="text-blue-950 mt-3 sm:mt-4 text-base sm:text-lg">Break the traditional business model.</p>
+
+                <p className="mt-6 sm:mt-8 md:mt-10 text-lg sm:text-xl font-bold text-gray-500">
+                    365 days online & offline guidance<br className="hidden sm:block" />Marketing strategy + systems + resources
+                </p>
+
+                <h2 className="mt-6 sm:mt-8 text-2xl sm:text-3xl font-extrabold text-blue-950">
+                    Practical, hands-on support to fully automate your business.
+                </h2>
+            </section>
+
             {/* HERO SECTION */}
-            <section className="py-12 sm:py-16 md:py-24 text-center bg-(--color1) px-4 sm:px-6">
-                <motion.h1
-                    initial={{ opacity: 0, y: -40 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8 }}
-                    className="text-3xl leading-tight sm:text-4xl sm:leading-20 md:text-5xl lg:text-6xl font-extrabold text-white drop-shadow-xl"
+            <section className="py-12 sm:py-16 md:py-24 text-center bg-white px-4 sm:px-6">
+                <h1 className="text-3xl leading-tight sm:text-4xl sm:leading-20 md:text-5xl lg:text-6xl font-extrabold text-blue-950 drop-shadow-xl"
                 >
                     Strategy at Core, <br className="hidden sm:block" />
                     Formula as <span className="text-amber-500">Crown</span>
-                </motion.h1>
-                <motion.p
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ delay: 0.5 }}
-                    className="mt-4 sm:mt-6 text-base sm:text-lg text-white max-w-2xl mx-auto"
+                </h1>
+                <p className="mt-4 sm:mt-6 text-base sm:text-lg text-white max-w-2xl mx-auto"
                 >
                     Forge Your Business Legend with our bespoke royal formula for unstoppable growth
-                </motion.p>
+                </p>
                 <div className="mt-6 sm:mt-8 flex flex-col sm:flex-row justify-center gap-3 sm:gap-4">
                     <Button className="bg-amber-500 text-white text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 rounded-full hover:bg-amber-600 w-full sm:w-auto">
                         <Link href="/register">Register Now</Link>
                     </Button>
-                    <Button variant="outline" className="text-black text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 rounded-full hover:bg-gray-200 w-full sm:w-auto">
+                    <Button variant="outline" className="text-blue-950 bg-(--dck-bg) text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 rounded-full hover:bg-gray-200 w-full sm:w-auto">
                         Watch Intro Video
                     </Button>
                 </div>
             </section>
 
             {/* VIDEO */}
-            <section className="flex justify-center bg-slate-200 py-8 sm:py-12 md:py-16 px-4">
-                <motion.div
-                    initial={{ opacity: 0, scale: 0.95 }}
-                    whileInView={{ opacity: 1, scale: 1 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.5 }}
-                    className="w-full max-w-4xl border-2 sm:border-4 border-white shadow-lg sm:shadow-2xl rounded-lg sm:rounded-xl overflow-hidden"
+            <section className="flex justify-center bg-(--dck-bg) py-8 sm:py-12 md:py-16 px-4">
+                <div className="w-full max-w-4xl border-2 sm:border-4 border-white shadow-lg sm:shadow-2xl rounded-lg sm:rounded-xl overflow-hidden"
                 >
                     <div className="relative w-full h-[200px] sm:h-[300px] md:h-[400px] lg:h-[450px] bg-gray-900 flex items-center justify-center">
                         <iframe
@@ -67,13 +74,13 @@ export default function Hero() {
                             allowFullScreen
                         ></iframe>
                     </div>
-                </motion.div>
+                </div>
             </section>
 
             {/* PAIN POINTS */}
-            <section className="bg-black py-12 sm:py-16 px-4 sm:px-6 text-center">
-                <h2 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6 text-white">Does this sound like you?</h2>
-                <p className="text-white max-w-2xl mx-auto mb-8 sm:mb-10 text-sm sm:text-base">
+            <section className="bg-white py-12 sm:py-16 px-4 sm:px-6 text-center">
+                <h2 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6 text-blue-950">Does this sound like you?</h2>
+                <p className="text-blue-950 max-w-2xl mx-auto mb-8 sm:mb-10 text-sm sm:text-base">
                     Before automation, most entrepreneurs are stuck in the same loop:
                     doing everything manually, burning out, and not seeing scalable results.
                 </p>
@@ -105,29 +112,10 @@ export default function Hero() {
                 </div>
             </section>
 
-            {/* DESCRIPTION / PROMISE */}
-            <section className="bg-slate-200 text-center py-12 sm:py-16 md:py-20 px-4 sm:px-6">
-                <p className="text-base sm:text-lg md:text-xl text-black">
-                    For entrepreneurs looking to grow<br className="hidden sm:block" />No marketing skills? No team?<br className="hidden sm:block" />Starting from zero?
-                </p>
 
-                <p className="mt-4 sm:mt-6 text-xl sm:text-2xl font-bold text-amber-500">
-                    AI + Marketing Management + Automation System
-                </p>
-
-                <p className="text-black mt-3 sm:mt-4 text-base sm:text-lg">Break the traditional business model.</p>
-
-                <p className="mt-6 sm:mt-8 md:mt-10 text-lg sm:text-xl font-bold text-gray-500">
-                    365 days online & offline guidance<br className="hidden sm:block" />Marketing strategy + systems + resources
-                </p>
-
-                <h2 className="mt-6 sm:mt-8 text-2xl sm:text-3xl font-extrabold text-black">
-                    Practical, hands-on support to fully automate your business.
-                </h2>
-            </section>
 
             {/* WHO IS THIS FOR */}
-            <section className="bg-white py-12 sm:py-16 md:py-20 px-4 sm:px-6 text-black">
+            <section className="bg-(--dck-bg) py-12 sm:py-16 md:py-20 px-4 sm:px-6 text-blue-950">
                 <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-10 items-start">
                     <div>
                         <h2 className="text-2xl sm:text-3xl font-bold mb-3 sm:mb-4">Who is this program for?</h2>
@@ -157,9 +145,9 @@ export default function Hero() {
             </section>
 
             {/* HOW IT WORKS / ROADMAP */}
-            <section className="bg-black py-12 sm:py-16 md:py-20 px-4 sm:px-6 text-center">
+            <section className="bg-white py-12 sm:py-16 md:py-20 px-4 sm:px-6 text-center">
                 <h2 className="text-2xl sm:text-3xl font-bold mb-3 sm:mb-4 text-amber-500">How It Works</h2>
-                <p className="text-white mb-8 sm:mb-10 max-w-2xl mx-auto text-sm sm:text-base">
+                <p className="text-blue-950 mb-8 sm:mb-10 max-w-2xl mx-auto text-sm sm:text-base">
                     A simple 3-stage roadmap to transform your business into an automated,
                     AI-assisted system.
                 </p>
@@ -192,7 +180,7 @@ export default function Hero() {
             </section>
 
             {/* FOUNDER SECTION */}
-            <section className="bg-black py-12 sm:py-16 md:py-20 px-4 sm:px-6 text-center md:text-left flex flex-col md:flex-row items-center justify-center gap-6 sm:gap-8 md:gap-12 border-t border-gray-800">
+            <section className="bg-(--dck-bg) py-12 sm:py-16 md:py-20 px-4 sm:px-6 text-center md:text-left flex flex-col md:flex-row items-center justify-center gap-6 sm:gap-8 md:gap-12">
                 <div className="w-48 sm:w-64 md:w-72 lg:w-80">
                     <Image
                         src={Sara}
@@ -203,17 +191,17 @@ export default function Hero() {
                     />
                 </div>
 
-                <div className="text-white max-w-xl mt-6 sm:mt-8 md:mt-0">
-                    <p className="text-lg sm:text-xl">I am <span className="text-amber-500 font-bold">Sara Yeong</span></p>
-                    <p className="mt-1 sm:mt-2 text-white text-sm sm:text-base">Founder of <span className="font-bold">DCK Media & Business Consulting</span></p>
+                <div className="text-blue-950 max-w-xl mt-6 sm:mt-8 md:mt-0">
+                    <p className="text-blue-950 text-lg sm:text-xl">I am <span className="text-amber-500 font-bold">Sara Yeong</span></p>
+                    <p className="mt-1 sm:mt-2 text-blue-950 text-sm sm:text-base">Founder of <span className="font-bold">DCK Media & Business Consulting</span></p>
 
-                    <p className="mt-3 sm:mt-4 leading-relaxed text-gray-200 text-sm sm:text-base">
+                    <p className="mt-3 sm:mt-4 leading-relaxed text-blue-950 text-sm sm:text-base">
                         My mission is simple: help ordinary people achieve the power of
                         <span className="font-semibold"> &quot;one person equals one full team&quot;</span>
                         using AI, structured marketing systems, and automation.
                     </p>
 
-                    <p className="mt-3 sm:mt-4 leading-relaxed text-gray-300 text-sm sm:text-base">
+                    <p className="mt-3 sm:mt-4 leading-relaxed text-blue-950 text-sm sm:text-base">
                         Together with our team, we&apos;re building Malaysia&apos;s top-level,
                         fully automated business ecosystem — designed for entrepreneurs who
                         want scalable, predictable growth.
@@ -226,7 +214,7 @@ export default function Hero() {
             </section>
 
             {/* FEATURE GRID */}
-            <section className="bg-slate-200 py-12 sm:py-16 md:py-20 px-4 sm:px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 md:gap-10 text-black">
+            <section className="bg-white py-12 sm:py-16 md:py-20 px-4 sm:px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 md:gap-10 text-blue-950">
                 <div>
                     <h3 className="font-bold text-lg sm:text-xl mb-3 sm:mb-4">Customer Management</h3>
                     <ul className="space-y-1 sm:space-y-2 text-xs sm:text-sm">
@@ -262,9 +250,9 @@ export default function Hero() {
             </section>
 
             {/* BONUS PACK */}
-            <section className="bg-black py-12 sm:py-16 md:py-20 px-4 sm:px-6 text-center">
+            <section className="bg-white py-12 sm:py-16 md:py-20 px-4 sm:px-6 text-center">
                 <h2 className="text-2xl sm:text-3xl font-bold mb-3 sm:mb-4 text-amber-500">Client Success Stories</h2>
-                <p className="text-gray-400 max-w-2xl mx-auto mb-8 sm:mb-10 text-sm sm:text-base">
+                <p className="text-blue-950 max-w-2xl mx-auto mb-8 sm:mb-10 text-sm sm:text-base">
                     A complete ecosystem of tools, templates, and guidance to shortcut
                     years of trial and error.
                 </p>
@@ -294,7 +282,7 @@ export default function Hero() {
             </section>
 
             {/* SOCIAL PROOF & TESTIMONIALS */}
-            <section className="bg-slate-200 py-12 sm:py-16 md:py-20 px-4 sm:px-6 text-center text-black">
+            <section className="bg-(--dck-bg) py-12 sm:py-16 md:py-20 px-4 sm:px-6 text-center text-blue-950">
                 <h2 className="text-2xl sm:text-3xl font-bold mb-3 sm:mb-4">Testimonial</h2>
                 <p className="text-gray-700 max-w-2xl mx-auto mb-8 sm:mb-10 text-sm sm:text-base">
                     Real people building real automated businesses. These are some of the
@@ -314,7 +302,7 @@ export default function Hero() {
             </section>
 
             {/* CLIENTS'S LOGO */}
-            <section className="flex flex-col items-center justify-center py-4 sm:py-8 px-4 h-auto sm:h-[55vh] bg-black">
+            <section className="flex flex-col items-center justify-center py-4 sm:py-8 px-4 h-auto sm:h-[55vh] bg-white">
                 <h1
                     className="text-2xl sm:text-3xl md:text-4xl font-bold mt-6 sm:mt-8 md:mt-10 mb-6 sm:mb-8 md:mb-10 pt-3 sm:pt-4 md:pt-5 text-amber-500"
                     data-aos="fade-up"
@@ -339,7 +327,7 @@ export default function Hero() {
             </section>
 
             {/* CASE STUDY SECTION */}
-            <section className="bg-white py-12 sm:py-16 md:py-20 px-4 sm:px-6 text-black">
+            <section className="bg-white py-12 sm:py-16 md:py-20 px-4 sm:px-6 text-blue-950">
                 <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-10 items-center">
                     <div>
                         <h2 className="text-2xl sm:text-3xl font-bold mb-3 sm:mb-4">Case Study: From Manual Chaos to <span className="text-amber-500">Predictable Growth</span></h2>
@@ -355,14 +343,14 @@ export default function Hero() {
                         </ul>
                     </div>
                     <div className="bg-slate-100 rounded-xl sm:rounded-2xl h-48 sm:h-56 md:h-64 shadow-inner flex items-center justify-center text-gray-500 text-xs sm:text-sm mt-6 md:mt-0">
-                        image here
+                        image something here
                     </div>
                 </div>
             </section>
 
             {/* PRICING SECTION */}
-            <section className="bg-slate-200 py-12 sm:py-16 md:py-24 text-center px-4 sm:px-6">
-                <h2 className="text-2xl sm:text-3xl font-bold text-black mb-2">Choose Your Plan</h2>
+            {/* <section className="bg-slate-200 py-12 sm:py-16 md:py-24 text-center px-4 sm:px-6">
+                <h2 className="text-2xl sm:text-3xl font-bold text-blue-950 mb-2">Choose Your Plan</h2>
                 <div className="flex items-center justify-center gap-4 mt-8 sm:mt-10 mb-3">
                     <Carousel
                         opts={{
@@ -395,17 +383,18 @@ export default function Hero() {
                         <CarouselPrevious className="cursor-pointer" />
                         <CarouselNext className="cursor-pointer" />
                     </Carousel>
-                </div>            </section>
+                </div>
+            </section> */}
 
             {/* GUARANTEE SECTION */}
-            <section className="bg-black py-12 sm:py-16 px-4 sm:px-6 text-center">
+            <section className="bg-white py-12 sm:py-16 px-4 sm:px-6 text-center">
                 <div className="max-w-3xl mx-auto border border-gray-800 rounded-xl sm:rounded-2xl p-6 sm:p-8 bg-gray-900/70">
                     <h2 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4 text-white">No-Risk, Action-Based Guarantee</h2>
                     <p className="text-gray-300 text-xs sm:text-sm mb-3 sm:mb-4">
                         If you show up, follow the steps, and implement the systems but see
                         zero improvement in your business within 60 days, reach out to us.
                     </p>
-                    <p className="text-gray-400 text-xs sm:text-sm">
+                    <p className="text-gray-300 text-xs sm:text-sm">
                         We&apos;ll review your setup together and either help you fix it or
                         arrange a fair refund. We only want committed entrepreneurs inside.
                     </p>
@@ -413,10 +402,10 @@ export default function Hero() {
             </section>
 
             {/* FAQ */}
-            <section className="bg-black text-white py-12 sm:py-16 md:py-20 px-4 sm:px-6 border-t border-gray-800">
-                <h2 className="text-2xl sm:text-3xl font-bold text-center mb-8 sm:mb-10">Frequently Asked Questions</h2>
+            <section className="bg-(--dck-bg) text-white py-12 sm:py-16 md:py-20 px-4 sm:px-6  border-gray-800">
+                <h2 className="text-2xl text-blue-950 sm:text-3xl font-bold text-center mb-8 sm:mb-10">Frequently Asked Questions</h2>
                 <div className="max-w-3xl mx-auto space-y-4 sm:space-y-6">
-                    <details className="bg-gray-900 p-4 sm:p-6 rounded-lg sm:rounded-xl">
+                    <details className="bg-gray-900/70 p-4 sm:p-6 rounded-lg sm:rounded-xl">
                         <summary className="cursor-pointer text-base sm:text-lg font-semibold">
                             Do I need prior experience?
                         </summary>
@@ -425,7 +414,7 @@ export default function Hero() {
                             provide step-by-step guidance and templates.
                         </p>
                     </details>
-                    <details className="bg-gray-900 p-4 sm:p-6 rounded-lg sm:rounded-xl">
+                    <details className="bg-gray-900/70 p-4 sm:p-6 rounded-lg sm:rounded-xl">
                         <summary className="cursor-pointer text-base sm:text-lg font-semibold">
                             Is everything really automated?
                         </summary>
@@ -434,7 +423,7 @@ export default function Hero() {
                             your business model. Some tasks are still human-driven by design.
                         </p>
                     </details>
-                    <details className="bg-gray-900 p-4 sm:p-6 rounded-lg sm:rounded-xl">
+                    <details className="bg-gray-900/70 p-4 sm:p-6 rounded-lg sm:rounded-xl">
                         <summary className="cursor-pointer text-base sm:text-lg font-semibold">
                             How much time do I need each week?
                         </summary>
@@ -444,7 +433,7 @@ export default function Hero() {
                             kicks in.
                         </p>
                     </details>
-                    <details className="bg-gray-900 p-4 sm:p-6 rounded-lg sm:rounded-xl">
+                    <details className="bg-gray-900/70 p-4 sm:p-6 rounded-lg sm:rounded-xl">
                         <summary className="cursor-pointer text-base sm:text-lg font-semibold">
                             Can I cancel anytime?
                         </summary>
@@ -457,7 +446,7 @@ export default function Hero() {
             </section>
 
             {/* FINAL CTA */}
-            <section className="bg-(--color1) py-12 sm:py-16 px-4 sm:px-6 text-center text-white">
+            <section className="bg-white py-12 sm:py-16 px-4 sm:px-6 text-center text-blue-950">
                 <h2 className="text-2xl sm:text-3xl font-extrabold mb-3 sm:mb-4">Ready to Build Your Automated Business?</h2>
                 <p className="max-w-2xl mx-auto text-xs sm:text-sm mb-6 sm:mb-8">
                     Join the next cohort and start implementing AI, marketing systems,
