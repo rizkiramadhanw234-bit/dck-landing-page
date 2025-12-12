@@ -27,7 +27,7 @@ export default function Hero() {
                     Strategy at Core, <br className="hidden sm:block" />
                     Formula as <span className="text-amber-500">Crown</span>
                 </h1>
-                <p className="mt-4 sm:mt-6 text-base sm:text-lg text-white max-w-2xl mx-auto"
+                <p className="mt-4 sm:mt-6 text-base sm:text-lg text-blue-950 max-w-2xl mx-auto"
                 >
                     Forge Your Business Legend with our bespoke royal formula for unstoppable growth
                 </p>
